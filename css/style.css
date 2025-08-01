@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Post No Bills Jaffna";
+    src: url("PostNoBillsJaffna-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.collection {
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview__left {
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.title::after {
+    content: "";
+    height: 1px;
+    width: 120px;
+    background-color: #fff;
+    display: block;
+    margin: 50px auto;
+}
+
+.list-of-watches {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.list-of-watches__item div {
+    background-color: #191b1c;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.list__title {
+    margin-bottom: 10px;
+}
+
+.preview__right {
+    background-image: url("../images/preview-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-right__title {
+    text-align: center;
+}
+
+.preview-right__title::after {
+    content: "";
+    height: 1px;
+    width: 120px;
+    background-color: #fff;
+    display: block;
+    margin: 30px auto;
+}
+
+.preview-right__button {
+    padding: 12px 28px;
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+}
