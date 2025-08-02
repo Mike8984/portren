@@ -44,13 +44,13 @@ button {
     justify-content: center;
 }
 
-.row {
+.collection__inner {
     display: flex;
     justify-content: space-between;
     gap: 30px;
 }
 
-.preview__left {
+.collection__left {
     margin: 0 auto;
 }
 
@@ -85,7 +85,7 @@ button {
     margin-bottom: 10px;
 }
 
-.preview__right {
+.collection__right {
     background-image: url("../images/preview-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -96,11 +96,11 @@ button {
     align-items: center;
 }
 
-.preview-right__title {
+.collection__right-title {
     text-align: center;
 }
 
-.preview-right__title::after {
+.collection__right-title::after {
     content: "";
     height: 1px;
     width: 120px;
@@ -109,9 +109,10 @@ button {
     margin: 30px auto;
 }
 
-.preview-right__button {
+.collection__right-button {
     padding: 12px 28px;
     border: 1px solid #fff;
     color: #fff;
     display: block;
 }
+
