@@ -21,6 +21,7 @@ html {
 body {
     font-family: "Playfair Display", serif;
     color: #fff;
+    font-size: 16px;
 }
 
 ul {
@@ -29,6 +30,8 @@ ul {
 
 img {
     width: 100%;
+    height: 100%;
+    display: block;
 }
 
 button {
@@ -48,6 +51,7 @@ button {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    width: 100%;
 }
 
 .collection__left {
@@ -89,11 +93,21 @@ button {
     background-image: url("../images/preview-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+/* Adaptive background image for smaller screens */
+@media (max-width: 900px) {
+    .collection__right {
+        width: 100%;
+        min-height: 300px;
+        background-size: contain;
+    }
 }
 
 .collection__right-title {
@@ -114,5 +128,6 @@ button {
     border: 1px solid #fff;
     color: #fff;
     display: block;
+    font-size: 18px;
 }
 
